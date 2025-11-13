@@ -29,11 +29,6 @@ This system automates the end-to-end process of:
       - [`test.gs`](#testgs)
       - [`scratch.gs`](#scratchgs)
 
-## Useful Links
-
-- [Automated Report - Google Drive](https://drive.google.com/drive/folders/1TviiUsYO0V6HC__sDM0ZnFkiJJkU1xHi)
-- [Lab Report Form Link](https://swiftcarediagnostic.com/lab-report/)
-
 ## How It Works
 
 ### System Architecture
@@ -78,8 +73,6 @@ All components work together to automate the lab report generation and delivery 
 ### Templates
 
 The system uses predefined templates stored in Google Drive. These templates are used to generate the lab reports dynamically based on the data submitted through the form. The templates include:
-
-Template folder link: [Templates](https://drive.google.com/drive/folders/17dWJga8sJsijxUQx60qvO2eVEEtVJHEB)
 
 <details>
 <summary>Click to expand template details</summary>
@@ -165,14 +158,14 @@ Contains the main functions for creating and managing lab reports.
 <summary>Click to expand explanation</summary>
 
 ```javascript
-const TEMPLATE_DOC_ID = "1ZM4UQq8ayT1Zyxq3_Ns8mw89P-oVGuo7XZiX3ZbGeJM";
+const TEMPLATE_DOC_ID = "template_id_here";
 const SIGNATURE_TEMPLATE_DOC_ID =
-  "1ry6GTSd8qNDMolxCyn_f9DniXnhDN3gWAYR0nwFl7xQ";
-const REPORT_FOLDER_ID = "19r23CO8xVQ50cl7KxT0cnir9ebedilKT";
-const REPORT_TEMPLATE_ID = "1N_kiEdMubYED3JhIHgx3iheHrOsW1-WRzeQirS03S0k";
+  "signature_template_id_here";
+const REPORT_FOLDER_ID = "report_folder_id_here";
+const REPORT_TEMPLATE_ID = "report_template_id_here";
 const REPORT_TEMPLATE_WITHOUT_HF_ID =
-  "11YKaIbrPu5PlYRgqogbwYnLBJQUYEhIvjg0lBlouzbs";
-const COMMENT_TEMPLATE_ID = "1lOC9GnLjm0u4LKi-EIwtjtOXtFIqZnzcfCyibkMs6Zs";
+  "report_template_without_header_footer_id_here";
+const COMMENT_TEMPLATE_ID = "report_template_comment_id_here";
 ```
 
 `createDynamicLabReport()` is the main function that gets triggered on form submission. It performs the following steps:
@@ -373,15 +366,3 @@ Contains the logic for generating reports using templates and form data.
 #### `utils.gs`
 
 Contains utility functions used across the other script files. They include functions for save pdf, date conversion and other helper functions.
-
----
-
-#### `test.gs`
-
-Contains test functions and test data.
-
----
-
-#### `scratch.gs`
-
-Contains scratch code for testing and debugging purposes.

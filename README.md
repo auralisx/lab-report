@@ -41,6 +41,7 @@ This Google Apps Script project simplifies the lab reporting process by automati
 
 ### Folder Structure
 
+- **docs**: Contains simple documentation and guidelines for using the script and how it works.
 - **templates**: Contains DOC templates used for table creation in the report.
 - **testing**: Holds experimental functions and logic for feature enhancements and testing purposes. Only there for my reference, Not essential for primary automation.
 
