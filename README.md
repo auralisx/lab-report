@@ -2,7 +2,8 @@
 
 This project automates the generation of lab reports from form submissions into a Google Sheet, using Google Apps Script to streamline the process. Once test data is entered through a form, the script organizes, formats, and exports the data into a structured lab report in Google Docs. The script is built to maintain readability by grouping tests by department and preventing page breaks within individual test tables.
 
-> **Note:** This project was intended to serve as a temporary automation solution until a complete Lab Report Management System is implemented. It provides a functional and effective way to handle lab report generation for the interim. 😎
+> [!NOTE]
+> This project was intended to serve as a temporary automation solution until a complete Lab Report Management System is implemented. It provides a functional and effective way to handle lab report generation for the interim.
 
 ## Project Overview
 
